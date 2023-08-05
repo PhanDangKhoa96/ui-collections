@@ -1,0 +1,12 @@
+.navListClose {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition: clip-path 0.7s cubic-bezier(0.7, 0, 0, 1),
+        -webkit-clip-path 0.7s cubic-bezier(0.7, 0, 0, 1);
+        color: #03bd781a;
+}
+
+.navListOpen {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: clip-path 0.7s cubic-bezier(0.7, 0, 0, 1),
+        -webkit-clip-path 0.7s cubic-bezier(0.7, 0, 0, 1);
+}

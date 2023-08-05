@@ -1,0 +1,8 @@
+.header {
+    .burger {
+        @apply text-seasalt;
+    }
+    .burger.dark-mode {
+        @apply text-vampire-black;
+    }
+}

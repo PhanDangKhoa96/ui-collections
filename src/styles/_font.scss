@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Titillium+Web:wght@400;600;700&display=swap");
+
+// Acumin pro
+@font-face {
+    font-family: "Acumin Pro";
+    src: url("/fonts/AcuminPro-Bold.woff2") format("woff2"),
+        url("/fonts/AcuminPro-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Acumin Pro";
+    src: url("/fonts/AcuminPro-Regular.woff2") format("woff2"),
+        url("/fonts/AcuminPro-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Acumin pro condensed
+@font-face {
+    font-family: "Acumin Pro Condensed";
+    src: url("/fonts/AcuminProCond-Semibold.woff2") format("woff2"),
+        url("/fonts/AcuminProCond-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Acumin Pro Condensed";
+    src: url("/fonts/AcuminProCond-Bold.woff2") format("woff2"),
+        url("/fonts/AcuminProCond-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Acumin Pro Condensed";
+    src: url("/fonts/AcuminProCond-Light.woff2") format("woff2"),
+        url("/fonts/AcuminProCond-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Baskerville
+@font-face {
+    font-family: "Baskerville";
+    src: url("/fonts/Baskerville-Italic.woff2") format("woff2"),
+        url("/fonts/Baskerville-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}

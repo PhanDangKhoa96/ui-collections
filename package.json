@@ -1,0 +1,37 @@
+{
+  "name": "portfolio-contentful-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.13",
+    "@heroicons/react": "^2.0.17",
+    "@studio-freight/react-lenis": "^0.0.26",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.31",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "gsap": "^3.12.2",
+    "next": "^13.4.5",
+    "next-seo": "^6.0.0",
+    "next-sitemap": "^4.0.9",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.60.0",
+    "styled-components": "^6.0.3",
+    "typescript": "5.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.6",
+    "tailwindcss": "^3.3.1"
+  }
+}
