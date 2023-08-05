@@ -226,7 +226,7 @@ const Card = (props: ICardProps) => {
         )
 
         return () => mm.revert()
-    }, [targetEl])
+    }, [targetEl, setActiveCase, id, isReversed])
     return (
         <div
             className={`relative flex flex-col gap-y-8 lg:items-center lg:gap-x-5 ${

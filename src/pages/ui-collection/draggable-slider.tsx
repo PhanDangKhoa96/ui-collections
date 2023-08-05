@@ -107,8 +107,11 @@ const DraggableSlider = () => {
                 >
                     {/* -mx-[10vw] is for the first and the last card in center */}
                     <div className="relative -mx-[10vw] flex gap-x-[2vw]">
-                        {cardImages.map((image) => (
-                            <div className="relative aspect-[9/12] w-[20vw]">
+                        {cardImages.map((image, index) => (
+                            <div
+                                key={index}
+                                className="relative aspect-[9/12] w-[20vw]"
+                            >
                                 <Image
                                     className="pointer-events-none select-none object-cover object-[100%_50%]"
                                     src={image}
