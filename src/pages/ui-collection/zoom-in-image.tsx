@@ -94,7 +94,7 @@ const ZoomInImage = () => {
                 >
                     <div ref={$target} className="relative">
                         <Image
-                            src={"/zoom-in-image/image.png"}
+                            src={"/zoom-in-image/image.webp"}
                             alt="image scroll zoom"
                             sizes="100vw"
                             fill

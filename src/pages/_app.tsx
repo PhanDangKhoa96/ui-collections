@@ -1,8 +1,8 @@
+import { seo } from "@/data"
 import "@/styles/global.scss"
+import { DefaultSeo, NextSeo } from "next-seo"
 import type { AppProps } from "next/app"
 import Head from "next/head"
-import { NextSeo } from "next-seo"
-import { seo } from "@/data"
 
 export default function App({ Component, pageProps }: AppProps) {
     const { metaTitle, metaImage, metaDescription, canonicalURL, keywords } =
@@ -11,8 +11,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
             <Head>
                 <meta name="robots" content="index,follow" />
-                <meta name="keywords" content={keywords} />
-                <link rel="shortcut icon" href="/logo-no-background.svg" />
 
                 <link
                     rel="preload"
@@ -87,23 +85,41 @@ export default function App({ Component, pageProps }: AppProps) {
                     crossOrigin="anonymous"
                 />
             </Head>
-            <NextSeo
+
+            <DefaultSeo
                 title={metaTitle}
                 description={metaDescription}
-                canonical={canonicalURL || ""}
+                canonical={canonicalURL || "https://www.pldkhoa.dev/"}
                 openGraph={{
                     url: "https://www.pldkhoa.dev/",
                     title: metaTitle,
                     description: metaDescription,
                     images: [
                         {
-                            url: metaImage?.data?.attributes?.url,
-                            alt: "Og Image Alt",
+                            url: metaImage,
+                            alt: metaTitle,
                         },
                     ],
                     siteName: metaTitle,
                 }}
+                additionalLinkTags={[
+                    {
+                        rel: "icon",
+                        href: "/logo-no-background.svg",
+                    },
+                    {
+                        rel: "apple-touch-icon",
+                        href: "/logo-no-background.svg",
+                    },
+                ]}
+                additionalMetaTags={[
+                    {
+                        name: "keywords",
+                        content: keywords,
+                    },
+                ]}
             />
+
             <Component {...pageProps} />
         </>
     )

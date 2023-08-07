@@ -32,7 +32,7 @@ const cards = [
         description:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, aspernatur placeat? Assumenda modi, veritatis voluptatum aliquam optio quasi accusantium commodi dolor illo omnis eius. Vitae reprehenderit officiis velit nobis, iste, exercitationem facilis aperiam molestiae enim nisi fugiat illo? Eaque inventore corrupti, illum similique facilis quibusdam temporibus nulla quaerat sunt in!",
         isReversed: false,
-        image: "/card-wiggle/card-wiggle-1.png",
+        image: "/card-wiggle/card-wiggle-1.webp",
     },
     {
         id: 2,
@@ -40,7 +40,7 @@ const cards = [
         description:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, aspernatur placeat? Assumenda modi, veritatis voluptatum aliquam optio quasi accusantium commodi dolor illo omnis eius. Vitae reprehenderit officiis velit nobis, iste, exercitationem facilis aperiam molestiae enim nisi fugiat illo? Eaque inventore corrupti, illum similique facilis quibusdam temporibus nulla quaerat sunt in!",
         isReversed: true,
-        image: "/card-wiggle/card-wiggle-2.jpg",
+        image: "/card-wiggle/card-wiggle-2.webp",
     },
     {
         id: 3,
@@ -48,7 +48,7 @@ const cards = [
         description:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, aspernatur placeat? Assumenda modi, veritatis voluptatum aliquam optio quasi accusantium commodi dolor illo omnis eius. Vitae reprehenderit officiis velit nobis, iste, exercitationem facilis aperiam molestiae enim nisi fugiat illo? Eaque inventore corrupti, illum similique facilis quibusdam temporibus nulla quaerat sunt in!",
         isReversed: false,
-        image: "/card-wiggle/card-wiggle-3.jpg",
+        image: "/card-wiggle/card-wiggle-3.webp",
     },
     {
         id: 4,
@@ -56,11 +56,11 @@ const cards = [
         description:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, aspernatur placeat? Assumenda modi, veritatis voluptatum aliquam optio quasi accusantium commodi dolor illo omnis eius. Vitae reprehenderit officiis velit nobis, iste, exercitationem facilis aperiam molestiae enim nisi fugiat illo? Eaque inventore corrupti, illum similique facilis quibusdam temporibus nulla quaerat sunt in!",
         isReversed: true,
-        image: "/card-wiggle/card-wiggle-4.jpg",
+        image: "/card-wiggle/card-wiggle-4.webp",
     },
 ]
 
-const CardToggle = () => {
+const CardToggle = ({}) => {
     const $target = useRef<HTMLDivElement>(null)
     const $case = useRef<HTMLDivElement>(null)
 
