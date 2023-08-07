@@ -60,7 +60,10 @@ const MagneticCursor = () => {
     }
 
     return (
-        <UICollectionLayout>
+        <UICollectionLayout
+            metaTitle="Magnetic Cursor"
+            keywords="magnetic cursor, gsap custom cursor, gsap magnetic cursor, custom cursor, gsap quickto, magnetic effect, mouse move cursor animation"
+        >
             <div className="grid h-screen place-items-center" ref={$wrapper}>
                 <div>
                     <div className="container mb-10 grid place-items-center">

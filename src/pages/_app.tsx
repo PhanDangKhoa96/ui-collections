@@ -1,3 +1,4 @@
+import { myDomain } from "@/constansts"
 import { seo } from "@/data"
 import "@/styles/global.scss"
 import { DefaultSeo, NextSeo } from "next-seo"
@@ -89,9 +90,9 @@ export default function App({ Component, pageProps }: AppProps) {
             <DefaultSeo
                 title={metaTitle}
                 description={metaDescription}
-                canonical={canonicalURL || "https://www.pldkhoa.dev/"}
+                canonical={canonicalURL || myDomain}
                 openGraph={{
-                    url: "https://www.pldkhoa.dev/",
+                    url: myDomain,
                     title: metaTitle,
                     description: metaDescription,
                     images: [

@@ -75,7 +75,10 @@ const ListRotator = () => {
     }, [])
 
     return (
-        <UICollectionLayout>
+        <UICollectionLayout
+            metaTitle="3D List Rotator"
+            keywords="3D list rotator, rotator, creative list scroller, creative list rotator, list animation, gsap list animation, gsap list 3D"
+        >
             <div ref={$wrapper}>
                 <RotatorWrapper
                     className="fixed inset-0 grid place-items-center bg-black"

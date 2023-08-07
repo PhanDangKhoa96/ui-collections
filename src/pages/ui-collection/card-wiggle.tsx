@@ -60,7 +60,7 @@ const cards = [
     },
 ]
 
-const CardToggle = ({}) => {
+const CardToggle = () => {
     const $target = useRef<HTMLDivElement>(null)
     const $case = useRef<HTMLDivElement>(null)
 
@@ -86,7 +86,10 @@ const CardToggle = ({}) => {
         return () => mm.revert()
     }, [])
     return (
-        <UICollectionLayout>
+        <UICollectionLayout
+            metaTitle="Card Wiggle"
+            keywords="card wiggle, wiggle animation, strapi clone, animation, tailwind css, react, scrolltrigger, gsap"
+        >
             <div className="mt-40" ref={$case}>
                 <div className="container">
                     <div className="relative z-10 mb-10 text-center lg:mb-20">

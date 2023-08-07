@@ -265,7 +265,10 @@ const FullpageScroll = () => {
     }, [])
 
     return (
-        <UICollectionLayout>
+        <UICollectionLayout
+            metaTitle="Fullpage Slider"
+            keywords="fullpage slider, fullpage scroll, fullpage slider gsap, fullpage slider scroll, gsap slider, slider parallax, slider animation, smooth fullpage scroll gsap"
+        >
             <div className="fullpage-scroll relative h-screen" ref={$wrapper}>
                 {screens.map((screen) => {
                     return (

@@ -1,11 +1,9 @@
-import Footer from "@/components/Footer"
-import Header from "@/components/Header"
+import Layout from "@/components/layout"
 import Link from "next/link"
 
 export default function Home() {
     return (
-        <>
-            <Header />
+        <Layout metaTitle="Home">
             <main>
                 <div className="grid min-h-screen place-items-center bg-vampire-black text-seasalt">
                     <div className="container">
@@ -30,8 +28,6 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-
-            <Footer />
-        </>
+        </Layout>
     )
 }

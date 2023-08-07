@@ -74,7 +74,10 @@ const DraggableSlider = () => {
     }, [])
 
     return (
-        <UICollectionLayout>
+        <UICollectionLayout
+            metaTitle="Draggable Slider"
+            keywords="animation, camillemormal clone, css award clone, creative, simple slider, parallax slider, vanila javascript, creative slider"
+        >
             <div className="grid h-screen place-items-center">
                 <div className="container text-center">
                     <h1 className="mb-5 small-title">Draggable Slider</h1>

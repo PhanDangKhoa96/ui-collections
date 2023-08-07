@@ -188,7 +188,10 @@ const CreativeImageGallery = () => {
     }, [])
 
     return (
-        <UICollectionLayout>
+        <UICollectionLayout
+            metaTitle="Creative Image Gallery"
+            keywords="creative, image gallery, pallet.supply clone, pastel, animation, transform on mouse move, mouse move effect, pastel color, vanila javascript"
+        >
             <div className="relative grid h-screen place-items-center overflow-hidden">
                 <div className="absolute -bottom-[40vh] -left-[40vw] -right-[40vw] -top-[40vh] z-[-2] bg-[#FDF4F5]"></div>
                 <div className="relative z-10 inline-block text-center text-gray-700">

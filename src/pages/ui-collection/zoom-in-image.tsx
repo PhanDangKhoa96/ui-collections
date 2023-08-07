@@ -68,7 +68,10 @@ const ZoomInImage = () => {
     }, [vw])
 
     return (
-        <UICollectionLayout>
+        <UICollectionLayout
+            metaTitle="Zoom In Image"
+            keywords="gsap scrolltrigger, zoom in image, gsap flip plugin, gsap flip state zoom, image zoom effect, image effect full screen, image animation on scroll, image scrolltrigger animation"
+        >
             <div className="h-[500vh] overflow-hidden" ref={$wrapper}>
                 <div className="grid h-screen place-items-center">
                     <div className="container mb-10 grid place-items-center">

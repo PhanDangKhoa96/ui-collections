@@ -37,7 +37,10 @@ const CustomCursor = () => {
     }, [])
 
     return (
-        <UICollectionLayout>
+        <UICollectionLayout
+            metaTitle="Custom Gradient Cursor"
+            keywords="custom cursor, gradient cursor, animation, gradient spinning cursor, vanila javascript, tailwind css, transform animation"
+        >
             <div
                 ref={$follower}
                 className="pointer-events-none fixed left-0 top-0 aspect-square w-[50vmin] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full will-change-transform"

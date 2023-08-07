@@ -113,7 +113,10 @@ const ButtonBgInner = styled.span<{
 
 const TextGradientTransition = () => {
     return (
-        <UICollectionLayout>
+        <UICollectionLayout
+            metaTitle="Text Gradient Transition"
+            keywords="text gradient animation, text gradient transition, vercel home clone, vercel animation, gradient animation, gradient effect, text gradient effect"
+        >
             <div className="grid h-screen place-items-center">
                 <div className="container text-center">
                     <h1 className="mb-10 flex select-none flex-col items-center text-center text-7xl font-bold tracking-tight md:text-8xl lg:flex-row lg:justify-center lg:tracking-tighter xl:tracking-tight">

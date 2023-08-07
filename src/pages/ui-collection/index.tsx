@@ -3,45 +3,8 @@ import Header from "@/components/Header"
 import React, { useRef } from "react"
 import Link from "next/link"
 import Image from "next/image"
-
-const cards = [
-    {
-        title: "Custom Cursor",
-        slug: "custom-cursor",
-    },
-    {
-        title: "Card Wiggle",
-        slug: "card-wiggle",
-    },
-    {
-        title: "Full Image Page Scroll",
-        slug: "fullpage-scroll",
-    },
-    {
-        title: "Text Gradient Transition",
-        slug: "text-gradient-transition",
-    },
-    {
-        title: "Draggable Slider",
-        slug: "draggable-slider",
-    },
-    {
-        title: "Creative Image Gallery",
-        slug: "creative-image-gallery",
-    },
-    {
-        title: "List Rotator",
-        slug: "list-rotator",
-    },
-    {
-        title: "Magnetic Cursor",
-        slug: "magnetic-cursor",
-    },
-    {
-        title: "Zoom In Image",
-        slug: "zoom-in-image",
-    },
-]
+import Layout from "@/components/layout"
+import { cards } from "@/data"
 
 interface ICard {
     title: string
@@ -51,8 +14,7 @@ interface ICard {
 
 const UICollection = () => {
     return (
-        <>
-            <Header />
+        <Layout metaTitle="UI Collections">
             <main className="min-h-screen mb-14 pt-16 lg:pt-20">
                 <div className="container py-10">
                     <div className="mb-10 max-w-sm md:max-w-md lg:mb-14 lg:max-w-xl">
@@ -77,8 +39,7 @@ const UICollection = () => {
                     </div>
                 </div>
             </main>
-            <Footer />
-        </>
+        </Layout>
     )
 }
 

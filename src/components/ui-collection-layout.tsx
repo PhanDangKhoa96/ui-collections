@@ -4,11 +4,19 @@ import React, { useEffect, useRef } from "react"
 import BackToCollection from "./BackToCollection"
 import { NextSeo } from "next-seo"
 import { seo } from "@/data"
+import { myDomain } from "@/constansts"
 
-const UICollectionLayout = ({ children }: { children: React.ReactNode }) => {
-    const { metaTitle, metaImage, metaDescription, canonicalURL, keywords } =
-        seo || {}
-
+const UICollectionLayout = ({
+    children,
+    metaTitle,
+    metaDescription,
+    keywords,
+}: {
+    children: React.ReactNode
+    metaTitle: string
+    metaDescription?: string
+    keywords?: string
+}) => {
     const lenisRef = useRef<any>(null)
     useEffect(() => {
         function update(time: number) {
@@ -21,32 +29,30 @@ const UICollectionLayout = ({ children }: { children: React.ReactNode }) => {
             gsap.ticker.remove(update)
         }
     })
+
+    const seoTitle = metaTitle + " | Khoa Phan"
     return (
         <>
             <NextSeo
-                title={metaTitle}
+                title={seoTitle}
                 description={metaDescription}
-                canonical={canonicalURL || ""}
+                canonical={window.location.href}
                 openGraph={{
-                    url: "https://www.pldkhoa.dev/",
-                    title: metaTitle,
+                    url: window.location.href,
+                    title: seoTitle,
                     description: metaDescription,
                     images: [
                         {
-                            url: metaImage,
-                            alt: metaTitle,
+                            url: "/og-image.svg",
+                            alt: seoTitle,
                         },
                     ],
-                    siteName: metaTitle,
+                    siteName: seoTitle,
                 }}
-                additionalLinkTags={[
+                additionalMetaTags={[
                     {
-                        rel: "icon",
-                        href: "/logo-no-background.svg",
-                    },
-                    {
-                        rel: "apple-touch-icon",
-                        href: "/logo-no-background.svg",
+                        name: "keywords",
+                        content: keywords || seo.keywords,
                     },
                 ]}
             />

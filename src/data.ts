@@ -9,3 +9,43 @@ export const seo = {
     structuredData: null,
     canonicalURL: null,
 }
+
+
+export const cards = [
+    {
+        title: "Custom Cursor",
+        slug: "custom-cursor",
+    },
+    {
+        title: "Card Wiggle",
+        slug: "card-wiggle",
+    },
+    {
+        title: "Full Image Page Scroll",
+        slug: "fullpage-scroll",
+    },
+    {
+        title: "Text Gradient Transition",
+        slug: "text-gradient-transition",
+    },
+    {
+        title: "Draggable Slider",
+        slug: "draggable-slider",
+    },
+    {
+        title: "Creative Image Gallery",
+        slug: "creative-image-gallery",
+    },
+    {
+        title: "List Rotator",
+        slug: "list-rotator",
+    },
+    {
+        title: "Magnetic Cursor",
+        slug: "magnetic-cursor",
+    },
+    {
+        title: "Zoom In Image",
+        slug: "zoom-in-image",
+    },
+]
