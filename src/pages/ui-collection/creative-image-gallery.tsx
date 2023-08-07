@@ -187,6 +187,9 @@ const CreativeImageGallery = () => {
         }
     }, [])
 
+    const loaderProp = ({ src }: { src: string }) => {
+        return src
+    }
     return (
         <UICollectionLayout
             metaTitle="Creative Image Gallery"
@@ -230,6 +233,7 @@ const CreativeImageGallery = () => {
                                             alt="tile image"
                                             fill
                                             priority
+                                            className="object-cover"
                                         />
                                     </div>
                                 </div>

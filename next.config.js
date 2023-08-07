@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
     reactStrictMode: true,
     compiler: {
@@ -20,6 +21,8 @@ const nextConfig = {
         formats: ["image/avif", "image/webp"],
         // allow SVG type
         dangerouslyAllowSVG: true,
+        loader: "custom",
+        loaderFile: "./src/components/CustomImageLoader",
     },
 }
 
