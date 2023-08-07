@@ -36,9 +36,9 @@ const UICollectionLayout = ({
             <NextSeo
                 title={seoTitle}
                 description={metaDescription}
-                canonical={window.location.href}
+                canonical={window ? window.location.href : ""}
                 openGraph={{
-                    url: window.location.href,
+                    url: window ? window.location.href : "",
                     title: seoTitle,
                     description: metaDescription,
                     images: [
