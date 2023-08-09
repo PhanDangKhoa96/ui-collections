@@ -302,6 +302,7 @@ const FullpageScroll = () => {
                                             <Credit
                                                 imgSrcName="Codrops"
                                                 imgSrcLink="https://tympanus.net/codrops/2023/06/12/free-ai-generated-images-vol-1/"
+                                                githubLink="https://github.com/PhanDangKhoa96/ui-animations/blob/main/src/pages/ui-collection/fullpage-scroll.tsx"
                                             />
                                         </div>
                                     </div>

@@ -87,6 +87,7 @@ const ZoomInImage = () => {
                                 codeRefName="Codrops"
                                 imgSrcName="@ameth.broccoli"
                                 imgSrcLink="https://www.instagram.com/ameth.broccoli/"
+                                githubLink="https://github.com/PhanDangKhoa96/ui-animations/blob/main/src/pages/ui-collection/zoom-in-image.tsx"
                             />
                         </div>
                     </div>

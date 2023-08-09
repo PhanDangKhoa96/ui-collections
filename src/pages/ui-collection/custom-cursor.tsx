@@ -64,6 +64,7 @@ const CustomCursor = () => {
                         inspiredName="poppr"
                         codeRefLink="https://www.youtube.com/@Hyperplexed"
                         codeRefName="Hyperplexed"
+                        githubLink="https://github.com/PhanDangKhoa96/ui-animations/blob/main/src/pages/ui-collection/custom-cursor.tsx"
                     />
                 </div>
             </div>

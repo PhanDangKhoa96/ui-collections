@@ -209,6 +209,7 @@ const CreativeImageGallery = () => {
                         codeRefLink="https://www.youtube.com/@Hyperplexed"
                         imgSrcLink="https://unsplash.com/"
                         imgSrcName="Unplash"
+                        githubLink="https://github.com/PhanDangKhoa96/ui-animations/blob/main/src/pages/ui-collection/creative-image-gallery.tsx"
                     />
                 </div>
 

@@ -152,6 +152,7 @@ const TextGradientTransition = () => {
                     <Credit
                         inspiredLink="https://vercel.com/"
                         inspiredName="Vercel"
+                        githubLink="https://github.com/PhanDangKhoa96/ui-animations/blob/main/src/pages/ui-collection/text-gradient-transition.tsx"
                     />
 
                     <div className="mx-auto mt-10 flex max-w-sm flex-col items-stretch gap-y-5 sm:max-w-md sm:flex-row sm:gap-x-5">

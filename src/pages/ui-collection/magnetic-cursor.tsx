@@ -77,6 +77,7 @@ const MagneticCursor = () => {
                             <Credit
                                 inspiredLink="http://manifesto.clapat.com/"
                                 inspiredName="manifesto.clapat"
+                                githubLink="https://github.com/PhanDangKhoa96/ui-animations/blob/main/src/pages/ui-collection/magnetic-cursor.tsx"
                             />
                         </div>
                     </div>

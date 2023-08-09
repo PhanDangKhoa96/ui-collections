@@ -94,6 +94,7 @@ const DraggableSlider = () => {
                         codeRefLink="https://www.youtube.com/@Hyperplexed"
                         imgSrcLink="https://unsplash.com/"
                         imgSrcName="Unplash"
+                        githubLink="https://github.com/PhanDangKhoa96/ui-animations/blob/main/src/pages/ui-collection/draggable-slider.tsx"
                     />
                 </div>
             </div>

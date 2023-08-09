@@ -125,6 +125,7 @@ const ListRotator = () => {
                         <Credit
                             inspiredLink="http://manifesto.clapat.com/"
                             inspiredName="manifesto.clapat"
+                            githubLink="https://github.com/PhanDangKhoa96/ui-animations/blob/main/src/pages/ui-collection/list-rotator.tsx"
                         />
                     </div>
                 </div>

@@ -104,6 +104,7 @@ const CardToggle = () => {
                             inspiredName="Strapi"
                             imgSrcLink="https://www.instagram.com/ameth.broccoli/"
                             imgSrcName="@ameth.broccoli"
+                            githubLink="https://github.com/PhanDangKhoa96/ui-animations/blob/main/src/pages/ui-collection/card-wiggle.tsx"
                         />
                     </div>
 
