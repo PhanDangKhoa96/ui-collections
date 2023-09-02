@@ -83,15 +83,40 @@ const SlicedImageHoverEffect = () => {
                 key="hover, animation, sliced image, technology, creative hover effect, hacker hover effect"
             >
                 <div className="container mt-40 font-['ocr-a-std'] xl:max-w-none xl:p-0">
-                    <div className="grid xl:grid-cols-3">
+                    <div className="container z-[2] mb-20 py-20 text-center text-seasalt text-balance">
+                        <h1 className="mb-5 tracking-[0.5em] text-amber-600 small-title !leading-normal">
+                            Hacker Hover Effect & Image Slice Effect
+                        </h1>
+
+                        <p>
+                            Shuffle characters in the card until it get the
+                            final state to mimic the hacker effect. For the
+                            images, they will appear simultaneously by sliding
+                            in vertically.
+                        </p>
+
+                        <Credit
+                            githubLink="https://github.com/PhanDangKhoa96/ui-animations/blob/main/src/pages/ui-collection/sliced-image-hover-effect.tsx"
+                            imgSrcName="Codrops"
+                            imgSrcLink="https://tympanus.net/codrops/2023/06/12/free-ai-generated-images-vol-1/"
+                            inspiredLink="https://qu.ai/blog/"
+                            inspiredName="Quai Network"
+                            codeRefLink="https://tympanus.net/codrops/"
+                            codeRefName="Codrops"
+                        />
+
+                        <p className="pt-10 text-purple-600">
+                            Let&apos;s hover to experience the effect &#10024;
+                        </p>
+                    </div>
+
+                    <div className="mb-40 grid xl:grid-cols-3">
                         {cards.map((item, index) => {
                             return (
                                 <Card key={index} index={index} item={item} />
                             )
                         })}
                     </div>
-
-                    <div className="h-screen"></div>
                 </div>
             </UICollectionLayout>
         </>
@@ -185,7 +210,7 @@ const Card = ({ item, index }: ICard) => {
         const images = $wrapper.current!.querySelectorAll(".image")
 
         const tl = gsap.timeline({
-            defaults: { duration: 0.5, ease: "power3.inOut" },
+            defaults: { duration: 0.5, ease: "power3.inOut", overwrite: true },
             paused: true,
         })
         tl.fromTo(
@@ -220,7 +245,7 @@ const Card = ({ item, index }: ICard) => {
         const images = $wrapper.current!.querySelectorAll(".image")
 
         const tl = gsap.timeline({
-            defaults: { duration: 1, ease: "power3.inOut" },
+            defaults: { duration: 1, ease: "power3.inOut", overwrite: true },
             paused: true,
         })
         tl.to(
@@ -287,6 +312,7 @@ const Card = ({ item, index }: ICard) => {
             </div>
 
             {/* Main content */}
+
             <div className="">
                 <div className="mb-7 flex items-center gap-x-3">
                     <div className="aspect-square w-4 rounded-sm border border-solid border-white bg-white/60"></div>
