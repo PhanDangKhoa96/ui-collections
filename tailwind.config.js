@@ -147,6 +147,14 @@ module.exports = {
                         paddingRight: "50px",
                     },
                 },
+                ".min-32-max-50": {
+                    fontSize: "clamp(2rem, 1.6556rem + 1.5306vw, 3.125rem)",
+                    lineHeight: 1.2,
+                },
+                ".min-24-max-32": {
+                    fontSize: "clamp(1.5rem, 1.3469rem + 0.6803vw, 2rem)",
+                    lineHeight: 1.5,
+                },
             })
         }),
     ],
