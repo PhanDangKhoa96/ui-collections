@@ -1,4 +1,3 @@
-
 export const seo = {
     metaTitle: "Khoa Phan | Front-End Developer",
     metaDescription:
@@ -9,7 +8,6 @@ export const seo = {
     structuredData: null,
     canonicalURL: null,
 }
-
 
 export const cards = [
     {
@@ -47,5 +45,13 @@ export const cards = [
     {
         title: "Zoom In Image",
         slug: "zoom-in-image",
+    },
+    // {
+    //     title: "Distortion Image",
+    //     slug: "distortion-image",
+    // },
+    {
+        title: "Sliced Image Hover Effect",
+        slug: "sliced-image-hover-effect",
     },
 ]

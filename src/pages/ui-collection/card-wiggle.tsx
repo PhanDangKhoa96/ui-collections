@@ -32,7 +32,7 @@ const cards = [
         description:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, aspernatur placeat? Assumenda modi, veritatis voluptatum aliquam optio quasi accusantium commodi dolor illo omnis eius. Vitae reprehenderit officiis velit nobis, iste, exercitationem facilis aperiam molestiae enim nisi fugiat illo? Eaque inventore corrupti, illum similique facilis quibusdam temporibus nulla quaerat sunt in!",
         isReversed: false,
-        image: "/card-wiggle/card-wiggle-1.webp",
+        image: "/logo-black.svg",
     },
     {
         id: 2,
@@ -40,7 +40,7 @@ const cards = [
         description:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, aspernatur placeat? Assumenda modi, veritatis voluptatum aliquam optio quasi accusantium commodi dolor illo omnis eius. Vitae reprehenderit officiis velit nobis, iste, exercitationem facilis aperiam molestiae enim nisi fugiat illo? Eaque inventore corrupti, illum similique facilis quibusdam temporibus nulla quaerat sunt in!",
         isReversed: true,
-        image: "/card-wiggle/card-wiggle-2.webp",
+        image: "/logo-color.svg",
     },
     {
         id: 3,
@@ -48,7 +48,7 @@ const cards = [
         description:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, aspernatur placeat? Assumenda modi, veritatis voluptatum aliquam optio quasi accusantium commodi dolor illo omnis eius. Vitae reprehenderit officiis velit nobis, iste, exercitationem facilis aperiam molestiae enim nisi fugiat illo? Eaque inventore corrupti, illum similique facilis quibusdam temporibus nulla quaerat sunt in!",
         isReversed: false,
-        image: "/card-wiggle/card-wiggle-3.webp",
+        image: "/logo-black.svg",
     },
     {
         id: 4,
@@ -56,7 +56,7 @@ const cards = [
         description:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, aspernatur placeat? Assumenda modi, veritatis voluptatum aliquam optio quasi accusantium commodi dolor illo omnis eius. Vitae reprehenderit officiis velit nobis, iste, exercitationem facilis aperiam molestiae enim nisi fugiat illo? Eaque inventore corrupti, illum similique facilis quibusdam temporibus nulla quaerat sunt in!",
         isReversed: true,
-        image: "/card-wiggle/card-wiggle-4.webp",
+        image: "/logo-color.svg",
     },
 ]
 
