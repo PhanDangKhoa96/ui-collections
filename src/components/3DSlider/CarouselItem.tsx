@@ -3,7 +3,6 @@ import Plane from "./Plane"
 import { Group } from "three/src/Three"
 import gsap from "gsap"
 import { ThreeEvent, useThree } from "@react-three/fiber"
-import { DomEvent } from "@react-three/fiber/dist/declarations/src/core/events"
 
 interface ICarouselItem {
     width: number

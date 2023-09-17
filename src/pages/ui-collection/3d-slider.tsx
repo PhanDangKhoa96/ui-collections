@@ -1,9 +1,6 @@
 import UICollectionLayout from "@/components/ui-collection-layout"
 import { Canvas } from "@react-three/fiber"
-import React from "react"
-import Carousel from "./Carousel"
-import CarouselItem from "./CarouselItem"
-import Plane from "./Plane"
+import Carousel from "../../components/3DSlider/Carousel"
 
 const Slider = () => {
     return (

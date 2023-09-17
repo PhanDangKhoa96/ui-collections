@@ -1,9 +1,12 @@
+import getPiramidalIndex from "@/utils/getPiramidalIndex"
+import lerp from "@/utils/lerp"
 import { useFrame, useThree } from "@react-three/fiber"
 import gsap from "gsap"
 import { RefObject, useEffect, useMemo, useRef, useState } from "react"
 import { Event, Object3D } from "three"
 import { Group } from "three/src/Three"
 import CarouselItem from "./CarouselItem"
+import PostProcessing from "./PostProcessing"
 
 const planeSetting = {
     width: 1,
@@ -28,15 +31,18 @@ const images = [
     "/3d-slider/9.jpg",
 ]
 
-const wheelSpeed = 0.2
+const wheelSpeed = 0.05
 const mouseMoveSpeed = 0.009
 
 const Carousel = () => {
     const [$root, setRoot] = useState<Group | null>(null)
 
+    const $postProcess = useRef<any>(null)
     const progress = useRef<number>(0)
     const isDown = useRef<boolean>(false)
     const startX = useRef<number>(0)
+    const speed = useRef(0)
+    const oldProgess = useRef(0)
     const [disableWheel, setDisableWheel] = useState<boolean>(false)
     const [activeIndex, setActiveIndex] = useState<number>(0)
     const $items = useMemo(() => {
@@ -50,10 +56,12 @@ const Carousel = () => {
         index: number,
         activeIndex: number
     ) => {
+        if (!$items) return
+        const piramidalIndex = getPiramidalIndex($items, activeIndex)[index]
         gsap.to(item.position, {
             x: () =>
                 (index - activeIndex) * (planeSetting.width + planeSetting.gap),
-            y: () => -Math.abs((index - activeIndex) * planeSetting.gap),
+            y: () => $items.length * -0.1 + piramidalIndex * 0.1,
         })
     }
 
@@ -70,6 +78,18 @@ const Carousel = () => {
         $items?.forEach((item, index) => {
             displayItem(item, index, active)
         })
+
+        speed.current = lerp(
+            speed.current,
+            Math.abs(oldProgess.current - progress.current),
+            0.1
+        )
+
+        oldProgess.current = lerp(oldProgess.current, progress.current, 0.1)
+
+        if ($postProcess.current) {
+            $postProcess.current.thickness = speed.current
+        }
     })
 
     //  =============
@@ -78,7 +98,7 @@ const Carousel = () => {
     useEffect(() => {
         const itemsLength = $items?.length || 0
         progress.current = (activeIndex / (itemsLength - 1)) * 100
-    }, [activeIndex])
+    }, [activeIndex, $items])
 
     const handleWheel = (e: Event) => {
         if (disableWheel) return
@@ -105,7 +125,6 @@ const Carousel = () => {
         const clientX = e.clientX
 
         const mouseProgress = -(clientX - startX.current) * mouseMoveSpeed
-        console.log("isDown.current", mouseProgress)
 
         progress.current = progress.current + mouseProgress
     }
@@ -138,6 +157,7 @@ const Carousel = () => {
                     )
                 })}
             </group>
+            <PostProcessing ref={$postProcess} />
         </>
     )
 }
