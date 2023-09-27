@@ -24,6 +24,6 @@
         "**/*.ts",
         "**/*.tsx",
         "src/utils/horizontalLoop.js"
-    ],
+, "src/utils/getGrid.js"    ],
     "exclude": ["node_modules"]
 }
