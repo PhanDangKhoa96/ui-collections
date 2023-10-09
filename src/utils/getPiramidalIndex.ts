@@ -2,11 +2,11 @@
 Get Piramidal Index
 --------------------*/
 
-import { Event, Object3D } from "three"
+import { Event, Object3D, Object3DEventMap } from "three"
 
 // Returns an array of decreasing index values in a pyramid shape, starting from the specified index with the highest value. These indices are often used to create overlapping effects among elements.
 export const getPiramidalIndex = (
-    array: Array<Object3D<Event>>,
+    array: Array<Object3D<Object3DEventMap>>,
     index: number
 ) =>
     array.map((_, i) =>

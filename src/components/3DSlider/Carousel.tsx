@@ -1,10 +1,10 @@
 import getPiramidalIndex from "@/utils/getPiramidalIndex"
 import lerp from "@/utils/lerp"
-import { useFrame, useThree } from "@react-three/fiber"
+import { ThreeEvent, useFrame, useThree } from "@react-three/fiber"
 import gsap from "gsap"
 import { RefObject, useEffect, useMemo, useRef, useState } from "react"
 import { Event, Object3D } from "three"
-import { Group } from "three/src/Three"
+import { Group, Object3DEventMap } from "three/src/Three"
 import CarouselItem from "./CarouselItem"
 import PostProcessing from "./PostProcessing"
 
@@ -52,7 +52,7 @@ const Carousel = () => {
     }, [$root])
     const { viewport } = useThree()
     const displayItem = (
-        item: Object3D<Event>,
+        item: Object3D<Object3DEventMap>,
         index: number,
         activeIndex: number
     ) => {
@@ -100,7 +100,7 @@ const Carousel = () => {
         progress.current = (activeIndex / (itemsLength - 1)) * 100
     }, [activeIndex, $items])
 
-    const handleWheel = (e: Event) => {
+    const handleWheel = (e: ThreeEvent<WheelEvent>) => {
         if (disableWheel) return
 
         const isVerticalWheel = Math.abs(e.deltaY) > Math.abs(e.deltaX)
@@ -109,17 +109,17 @@ const Carousel = () => {
         progress.current = progress.current + wheelProgress * wheelSpeed
     }
 
-    const handleMouseDown = (e: Event) => {
+    const handleMouseDown = (e: ThreeEvent<PointerEvent>) => {
         isDown.current = true
         startX.current = e.clientX
     }
 
-    const handleMouseUp = (e: Event) => {
+    const handleMouseUp = (e: ThreeEvent<PointerEvent>) => {
         isDown.current = false
         startX.current = e.clientX
     }
 
-    const handleMouseMove = (e: Event) => {
+    const handleMouseMove = (e: ThreeEvent<PointerEvent>) => {
         if (!isDown.current) return
 
         const clientX = e.clientX
@@ -157,7 +157,7 @@ const Carousel = () => {
                     )
                 })}
             </group>
-            <PostProcessing ref={$postProcess} />
+            {/* <PostProcessing ref={$postProcess} /> */}
         </>
     )
 }
