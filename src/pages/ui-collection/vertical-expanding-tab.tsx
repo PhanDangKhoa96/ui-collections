@@ -115,8 +115,8 @@ const Card = ({
         >
             <p>{date}</p>
             <p>
-                {skills.map((skill) => {
-                    return <span>{skill}, </span>
+                {skills.map((skill, index) => {
+                    return <span key={index}>{skill}, </span>
                 })}
             </p>
             <div>

@@ -4,7 +4,7 @@ import { ThreeEvent, useFrame, useThree } from "@react-three/fiber"
 import gsap from "gsap"
 import { RefObject, useEffect, useMemo, useRef, useState } from "react"
 import { Event, Object3D } from "three"
-import { Group, Object3DEventMap } from "three/src/Three"
+import { Group } from "three/src/Three"
 import CarouselItem from "./CarouselItem"
 import PostProcessing from "./PostProcessing"
 
@@ -52,7 +52,7 @@ const Carousel = () => {
     }, [$root])
     const { viewport } = useThree()
     const displayItem = (
-        item: Object3D<Object3DEventMap>,
+        item: Object3D<Event>,
         index: number,
         activeIndex: number
     ) => {
