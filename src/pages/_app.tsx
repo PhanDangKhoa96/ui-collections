@@ -89,11 +89,12 @@ export default function App({ Component, pageProps }: AppProps) {
             </Head>
 
             <Script
+                id="gtag-src"
                 async
                 src="https://www.googletagmanager.com/gtag/js?id=G-XV79RSWGBG"
             />
 
-            <Script>
+            <Script id="gtag-script">
                 {`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
