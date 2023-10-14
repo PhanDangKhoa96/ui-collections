@@ -91,7 +91,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Script
                 id="gtag-src"
                 async
-                src="https://www.googletagmanager.com/gtag/js?id=G-XV79RSWGBG"
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
             />
 
             <Script id="gtag-script">
@@ -100,7 +100,7 @@ export default function App({ Component, pageProps }: AppProps) {
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     
-      gtag('config', 'G-XV79RSWGBG');
+      gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS});
 `}
             </Script>
 
