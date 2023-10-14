@@ -1,21 +1,22 @@
+import { seo } from "@/data"
 import { ReactLenis } from "@studio-freight/react-lenis"
 import gsap from "gsap"
+import { NextSeo } from "next-seo"
 import React, { useEffect, useRef } from "react"
 import BackToCollection from "./BackToCollection"
-import { NextSeo } from "next-seo"
-import { seo } from "@/data"
-import { myDomain } from "@/constansts"
 
 const UICollectionLayout = ({
     children,
     metaTitle,
     metaDescription,
     keywords,
+    horizontalScroll = false,
 }: {
     children: React.ReactNode
     metaTitle: string
     metaDescription?: string
     keywords?: string
+    horizontalScroll?: boolean
 }) => {
     const lenisRef = useRef<any>(null)
     useEffect(() => {
@@ -62,7 +63,14 @@ const UICollectionLayout = ({
                 ]}
             />
 
-            <ReactLenis root ref={lenisRef} autoRaf={false}>
+            <ReactLenis
+                root
+                ref={lenisRef}
+                autoRaf={false}
+                options={{
+                    orientation: horizontalScroll ? "horizontal" : "vertical",
+                }}
+            >
                 <BackToCollection />
                 <div className="">{children}</div>
             </ReactLenis>

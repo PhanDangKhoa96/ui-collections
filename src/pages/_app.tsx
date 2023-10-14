@@ -4,6 +4,7 @@ import "@/styles/global.scss"
 import { DefaultSeo, NextSeo } from "next-seo"
 import type { AppProps } from "next/app"
 import Head from "next/head"
+import Script from "next/script"
 
 export default function App({ Component, pageProps }: AppProps) {
     const { metaTitle, metaImage, metaDescription, canonicalURL, keywords } =
@@ -86,6 +87,21 @@ export default function App({ Component, pageProps }: AppProps) {
                     crossOrigin="anonymous"
                 />
             </Head>
+
+            <Script
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=G-XV79RSWGBG"
+            />
+
+            <Script>
+                {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-XV79RSWGBG');
+`}
+            </Script>
 
             <DefaultSeo
                 title={metaTitle}
