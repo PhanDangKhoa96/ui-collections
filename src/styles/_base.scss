@@ -10,17 +10,24 @@
     }
 }
 
-::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #f4f7f5;
 }
 
-::-webkit-scrollbar {
+html:has(.horizontal-scroll)::-webkit-scrollbar {
+    display: none !important;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none !important;
+}
+html::-webkit-scrollbar {
     width: 10px;
     background-color: #f4f7f5;
 }
 
-::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb {
     background-color: #222823;
 }
 
