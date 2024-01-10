@@ -23,6 +23,7 @@
     "glsl-noise": "^0.0.0",
     "glslify": "^7.1.1",
     "gsap": "^3.12.2",
+    "html-react-parser": "^4.2.2",
     "leva": "^0.9.35",
     "next": "^13.4.5",
     "next-seo": "^6.0.0",
