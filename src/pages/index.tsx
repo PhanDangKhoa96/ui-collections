@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <Layout metaTitle="Home">
             <main>
-                <div className="grid min-h-screen place-items-center bg-vampire-black text-seasalt">
+                <div className="grid min-h-screen lg:py-20 py-14 place-items-center bg-vampire-black text-seasalt">
                     <div className="container">
                         <div className="text-center">
                             <h1 className="mx-auto mb-10 max-w-[995px] !whitespace-normal big-title">

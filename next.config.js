@@ -1,6 +1,16 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+    async redirects() {
+        return [
+            {
+                source: "/",
+                has: [{type: ""}],
+                destination: "/ui-collection",
+                permanent: true,
+            },
+        ]
+    },
     reactStrictMode: true,
     compiler: {
         // Enables the styled-components SWC transform

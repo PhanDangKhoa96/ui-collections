@@ -15,22 +15,16 @@ interface ICard {
 const UICollection = () => {
     return (
         <Layout metaTitle="UI Collections">
-            <main className="min-h-screen mb-14 pt-16 lg:pt-20">
+            <main className="mb-14 min-h-screen pt-20 lg:pt-32">
                 <div className="container py-10">
-                    <div className="mb-10 max-w-sm md:max-w-md lg:mb-14 lg:max-w-xl">
-                        <h1 className="mb-5 medium-title">UI Animations</h1>
-                        <div className=" flex max-w-lg flex-col gap-y-5">
-                            <h2>
-                                UI elements made with GSAP, native Javascript
-                                API, and some cool other animation libraries.
-                            </h2>
-
-                            <h2>
-                                All the components are built with ReactJS
-                                integrated with TypeScript as a UI Framework and
-                                Tailwind CSS as a Style Framework
-                            </h2>
-                        </div>
+                    <div className="mb-14 text-center lg:mb-20">
+                        <h1 className="mb-5 lg:mb-8 medium-title">My Playground</h1>
+                        <p className="max-w-xl mx-auto">
+                            Hi this is my playground where i create or replicate
+                            things on the Internet, i mostly use GSAP for the
+                            animations as well as Tailwind CSS for the styling.
+                            Feel free to explore! 😀
+                        </p>
                     </div>
                     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
                         {cards?.map((card, index) => {
