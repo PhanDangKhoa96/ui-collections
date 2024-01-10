@@ -5,7 +5,6 @@ const nextConfig = {
         return [
             {
                 source: "/",
-                has: [{type: ""}],
                 destination: "/ui-collection",
                 permanent: true,
             },
