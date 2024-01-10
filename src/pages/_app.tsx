@@ -5,6 +5,7 @@ import { DefaultSeo, NextSeo } from "next-seo"
 import type { AppProps } from "next/app"
 import Head from "next/head"
 import Script from "next/script"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App({ Component, pageProps }: AppProps) {
     const { metaTitle, metaImage, metaDescription, canonicalURL, keywords } =
@@ -139,6 +140,8 @@ export default function App({ Component, pageProps }: AppProps) {
             />
 
             <Component {...pageProps} />
+
+            <Analytics />
         </>
     )
 }
