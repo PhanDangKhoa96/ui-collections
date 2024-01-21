@@ -7,6 +7,7 @@ const pages = [
     "particle-ring",
     "particle-wave",
     "periodic-table",
+    "text-clip-path",
 ]
 
 const makeTitle = (slug: string) => {
