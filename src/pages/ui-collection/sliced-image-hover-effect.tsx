@@ -153,6 +153,7 @@ const Card = ({ item, index }: ICard) => {
             if (image instanceof HTMLElement) {
                 image.style.clipPath = `polygon(${left}% 0, ${right}% 0, ${right}% 100%, ${left}% 100%)`
 
+                // These styles is because of anti alising of clip-path property
                 image.style.left = `${index * -1}px`
                 image.style.width = `calc(100% + ${numberOfSlices - 1}px)`
             }
