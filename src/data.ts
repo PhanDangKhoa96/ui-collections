@@ -46,12 +46,12 @@ export const cards = [
         title: "Zoom In Image",
         slug: "zoom-in-image",
     },
-    // {
-    //     title: "Distortion Image",
-    //     slug: "distortion-image",
-    // },
     {
         title: "Sliced Image Hover Effect",
         slug: "sliced-image-hover-effect",
+    },
+    {
+        title: "Expanded Card Hover Effect",
+        slug: "expanded-card",
     },
 ]
