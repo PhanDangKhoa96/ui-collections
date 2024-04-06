@@ -54,4 +54,8 @@ export const cards = [
         title: "Expanded Card Hover Effect",
         slug: "expanded-card",
     },
+    {
+        title: "Polygon Cards Hover Effect",
+        slug: "polygon-cards",
+    },
 ]
